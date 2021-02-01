@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect 01</title>
+
+<style>
+  
+  body{
+    margin: 0px;
+    padding: 0px;
+    height: 500%;
+    background-color:#0A2B3E;
+}
+#main{
+    width: 100%;
+    height: 540px;
+    background: linear-gradient(#66FFFD,#FFF);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+#text{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 41%;
+    margin-top: -50px;
+    text-align: center;
+}
+
+#text h1{
+    font-size: 76px;
+    word-spacing: 35px;
+    letter-spacing: 19px;
+    color: #0A2B3E;
+    text-shadow: -11px -3px 10px #000;
+}
+
+#mountainImg{
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:250px;
+}
+#btn{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: linear-gradient(#8EFFFc,#6AF0D5);
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    box-shadow: 0 0 0 8px rgba(140,237,243,.2),0 0 0 16px rgba(140,237,243,.3);
+    cursor: pointer;
+}
+#btn img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#section-2{
+    text-shadow: 1px 0px 3px white;
+    top:100%;
+    height: 300px;
+    position: absolute;
+    margin: 0 200px;
+
+}
+
+#section-2 p{
+    font-size: 20px;
+    color: #f2f2f2;
+    text-align: justify;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <div id="main">
+       
+        <div id="text"><h1>Parallax Effect</h1></div>
+        <div id="mountainImg"><img src="./images/Mountain.png" width="100%"/></div>
+    </div>
+    
+    <div id="btn">
+        <img src="./images/Playpng.png" width="20px"/>
+    </div>
+    <div id="section-2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate exercitationem, reiciendis nostrum, nisi provident, officiis praesentium rem molestiae consequatur eos aliquid optio veritatis eligendi modi omnis odit velit placeat amet ipsa odio laborum! Accusantium eum quis non eaque, quas, sunt eligendi ut tempora explicabo quibusdam magnam? Aliquid perferendis dolorem iure? Officia debitis vitae eligendi eius, reiciendis repudiandae, dolorum temporibus non totam, aliquid impedit esse ex id laborum quis dicta soluta quod iste? Neque nulla quibusdam omnis quo tenetur quisquam illum voluptates ipsam enim dicta assumenda minima pariatur, rerum ducimus repellat eveniet officia culpa deleniti. Molestiae, magni. Repellendus illo labore dolorum recusandae asperiores blanditiis cupiditate sint aliquam amet esse. Odio dicta perferendis corrupti saepe et explicabo laudantium, earum distinctio, possimus a illo nemo provident deleniti, quasi similique in impedit voluptatum eligendi iste sunt vero! Dolores, provident sed? Eaque qui ullam quisquam, earum perspiciatis laborum molestias facere a animi doloribus fugiat alias eum quasi. Sed temporibus facere ut repudiandae atque magnam perspiciatis possimus blanditiis, vitae ipsum harum recusandae eligendi corrupti nisi quo impedit in qui voluptates excepturi. Aliquid, iusto officiis fugit laboriosam tempora in magnam totam rem! Expedita recusandae harum nulla adipisci molestiae a maxime accusamus minima aut asperiores? Voluptatum, nesciunt ad?</p>
+    </div>
+
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script>
+$(window).scroll(function(){
+    var scrollval = $(this).scrollTop();    // It will return scroll value
+    
+    $("#text").css("transform",'translate(0px,-'+scrollval/2+'%)');
+    $("#btn").css("transform",'translate(-50%,'+scrollval/3+'%)');
+});;
+
+
+</script>
+
+</body>
+</html>

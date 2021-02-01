@@ -1,0 +1,49 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+    height: 100%;
+    background: rgb(247, 184, 67);
+
+}
+
+#skewed{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/coffee.jpg),linear-gradient(230deg,#f533d4,#2461bb);
+    background-blend-mode:luminosity;
+    background-size: cover;
+    
+}
+section .skewed{
+
+position: absolute;
+background: #fff;
+bottom: -105%;
+left: 0;
+width: 100%;
+height: 100%;
+transform: skewY(-10deg);
+transform-origin: top left;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

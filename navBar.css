@@ -1,0 +1,21 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    
+    #nav-bar{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background:orange;
+        
+    }
+    .navbar-toggler:focus{outline: none!important;}
+    .navbar-nav li{padding: 0 10px;}
+    
+    #nav-bar ul li a{
+        color:red;
+    font-size: 25px;
+}
+    
+
